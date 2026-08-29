@@ -512,6 +512,94 @@ header .navbar ul li a:hover {
   font-family: "Poppins";
   margin-left: 0.5rem;
 }
+.skills-bars {
+  margin-bottom: 2.5rem;
+  background: #18191c;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.skills-bars h3 {
+  color: #fff;
+  font-size: 2.2rem; /* bigger section title */
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.bar {
+  margin-bottom: 1.2rem;
+}
+.bar .info {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 1.7rem; /* bigger skill name and percentage */
+}
+.progress {
+  background: #23242a;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 14px; /* optional: make the bar itself a bit thicker */
+  background: #ffae00;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.skill-card {
+  background: #23242a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 1.5rem 1.2rem;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card h4 {
+  color: #ffae00;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-card p,
+.skill-card ul,
+.skill-card li {
+  font-size: 1.3rem; /* bigger skill text */
+}
+
+.skill-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.skill-card li {
+  list-style: disc;
+  margin-bottom: 0.3rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(255,174,0,0.18);
+  background: linear-gradient(120deg, #23242a 80%, #ffae00 120%);
+}
+
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
   .skills .container {
